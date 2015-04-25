@@ -1,0 +1,920 @@
+VERSION  5.3 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS  "[]" ;
+DESIGN too_large ;
+UNITS DISTANCE MICRONS 2000 ;
+
+HISTORY CREATETIME 18 September 2002 17:50:50 ;
+HISTORY SAVETIME 18 September 2002 17:50:55 ;
+HISTORY DB CREATE by d90mhz ;
+HISTORY Name: LBRARY, dir: '' ;
+HISTORY SE version: 5.3.46 MASTER, DB code version: 5.1, DB created under: 5.1 ;
+HISTORY Max mem: 25165824, mainsail: $TNT_INST_DIR/tools/dsm/lib/sys1620r.olb:
+        16.20 ;
+HISTORY System no. 19 --> SPARC UNIX, CPU id = 'Sun_Microsystems: 2161101965' ;
+HISTORY Design saved as LBRARY in directory  ;
+HISTORY DB LOAD by d90mhz ;
+HISTORY Name: LBRARY, dir: '' ;
+HISTORY SE version: 5.3.46 MASTER, DB code version: 5.1, DB created under: 5.1 ;
+HISTORY Max mem: 25165824, mainsail: $TNT_INST_DIR/tools/dsm/lib/sys1620r.olb:
+        16.20 ;
+HISTORY System no. 19 --> SPARC UNIX, CPU id = 'Sun_Microsystems: 2161101965' ;
+HISTORY INPUT VERILOG FILENAME "/n/acht/home/d90mhz/perl/cellgen/too_large.v"
+        LIB "cds_vbin" REFLIB "cds_vbin " DESIGN "cds_vbin.too_large:hdl" ;
+HISTORY FINITIALIZE FLOORPLAN ;
+HISTORY FINITIALIZE FLOORPLAN ROWUTILIZATION .85 ROWSPACING 0 BLOCKHALO 2000
+        FLIPALTERNATEROWS ASPECTRATIO 1 ABUTPAIRSOFROWS XIOTOCOREDIST 10000
+        YIOTOCOREDIST 10000 ;
+HISTORY FINITIALIZE FLOORPLAN ROWUTILIZATION .5 ROWSPACING 0 BLOCKHALO 2000
+        FLIPALTERNATEROWS ASPECTRATIO 1 ABUTPAIRSOFROWS XIOTOCOREDIST 10000
+        YIOTOCOREDIST 10000 ;
+HISTORY FINITIALIZE FLOORPLAN ROWUTILIZATION .55 ROWSPACING 0 BLOCKHALO 2000
+        FLIPALTERNATEROWS ASPECTRATIO 1 ABUTPAIRSOFROWS XIOTOCOREDIST 10000
+        YIOTOCOREDIST 10000 ;
+HISTORY FINITIALIZE FLOORPLAN ROWUTILIZATION .55 ROWSPACING 0 BLOCKHALO 2000
+        FLIPALTERNATEROWS ASPECTRATIO 1 ABUTPAIRSOFROWS XIOTOCOREDIST 10000
+        YIOTOCOREDIST 10000 ;
+HISTORY QPLACE NOCONFIG ;
+HISTORY FINITIALIZE FLOORPLAN ;
+HISTORY FINITIALIZE FLOORPLAN ROWUTILIZATION .5 ROWSPACING 0 BLOCKHALO 2000
+        FLIPALTERNATEROWS ASPECTRATIO 1 ABUTPAIRSOFROWS XIOTOCOREDIST 10000
+        YIOTOCOREDIST 10000 ;
+HISTORY QPLACE NOCONFIG ;
+
+
+PROPERTYDEFINITIONS
+DESIGN  VERILOGDESIGNNAME  STRING  "cds_vbin.too_large:hdl"  ;
+
+END PROPERTYDEFINITIONS
+DIEAREA ( -118080 -118080 ) ( 119520 119520 ) ;
+
+ROW ROW_14 CoreSite 95040 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_13 CoreSite 80640 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_12 CoreSite 66240 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_11 CoreSite 51840 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_10 CoreSite 37440 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_9 CoreSite 23040 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_8 CoreSite 8640 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_7 CoreSite -5760 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_6 CoreSite -20160 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_5 CoreSite -34560 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_4 CoreSite -48960 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_3 CoreSite -63360 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_2 CoreSite -77760 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_1 CoreSite -92160 -105120 FN DO 1 BY 21 STEP 14400 10080 ;
+ROW ROW_0 CoreSite -106560 -105120 N DO 1 BY 21 STEP 14400 10080 ;
+TRACKS Y -117360 DO 165 STEP 1440 LAYER METAL1 METAL2 ;
+TRACKS Y -117360 DO 165 STEP 1440 LAYER METAL2 METAL3 METAL4 ;
+TRACKS Y -116960 DO 106 STEP 2240 LAYER METAL4 METAL5 METAL6 ;
+TRACKS X -117360 DO 165 STEP 1440 LAYER METAL1 METAL2 METAL3 ;
+TRACKS X -117360 DO 165 STEP 1440 LAYER METAL3 METAL4 METAL5 ;
+TRACKS X -116760 DO 90 STEP 2640 LAYER METAL5 METAL6 ;
+GCELLGRID Y -118080 DO 17 STEP 14400 ;
+GCELLGRID Y 119520 DO 1 STEP 0 ;
+GCELLGRID X -118080 DO 17 STEP 14400 ;
+GCELLGRID X 119520 DO 1 STEP 0 ;
+
+VIAS 9 ;
+- via1 + RECT METAL2 ( -380 -280 ) ( 380 280 ) + RECT VIA12 ( -260 -260 )
+  ( 260 260 ) + RECT METAL1 ( -380 -280 ) ( 380 280 ) ;
+- via2 + RECT METAL3 ( -380 -280 ) ( 380 280 ) + RECT VIA23 ( -260 -260 )
+  ( 260 260 ) + RECT METAL2 ( -380 -280 ) ( 380 280 ) ;
+- via2_1 + RECT METAL3 ( -380 -280 ) ( 380 280 ) + RECT VIA23 ( -260 -260 )
+  ( 260 260 ) + RECT METAL2 ( -380 -790 ) ( 380 280 ) ;
+- via2_2 + RECT METAL3 ( -380 -280 ) ( 380 280 ) + RECT VIA23 ( -260 -260 )
+  ( 260 260 ) + RECT METAL2 ( -380 -280 ) ( 380 790 ) ;
+- via3 + RECT METAL4 ( -380 -280 ) ( 380 280 ) + RECT VIA34 ( -260 -260 )
+  ( 260 260 ) + RECT METAL3 ( -380 -280 ) ( 380 280 ) ;
+- via3_1 + RECT METAL4 ( -380 -280 ) ( 380 280 ) + RECT VIA34 ( -260 -260 )
+  ( 260 260 ) + RECT METAL3 ( -1070 -280 ) ( 380 280 ) ;
+- via3_2 + RECT METAL4 ( -380 -280 ) ( 380 280 ) + RECT VIA34 ( -260 -260 )
+  ( 260 260 ) + RECT METAL3 ( -380 -280 ) ( 1070 280 ) ;
+- via4 + RECT METAL5 ( -380 -280 ) ( 380 280 ) + RECT VIA45 ( -260 -260 )
+  ( 260 260 ) + RECT METAL4 ( -380 -280 ) ( 380 280 ) ;
+- via5 + RECT METAL6 ( -540 -540 ) ( 540 540 ) + RECT VIA56 ( -360 -360 )
+  ( 360 360 ) + RECT METAL5 ( -480 -380 ) ( 480 380 ) ;
+END VIAS
+
+COMPONENTS 281 ;
+- U1 nand2_1 + PLACED ( 51840 -34560 ) FN ;
+- U2 nand2_1 + PLACED ( 51840 -54720 ) FN ;
+- U3 oai21_1 + PLACED ( 80640 -24480 ) FN ;
+- U4 inv1x_1 + PLACED ( 95040 -14400 ) N ;
+- U5 inv1x_2 + PLACED ( 95040 15840 ) N ;
+- U6 inv1x_3 + PLACED ( 66240 15840 ) FN ;
+- U7 nor2_1 + PLACED ( 37440 -24480 ) N ;
+- U8 inv1x_2 + PLACED ( 37440 -4320 ) N ;
+- U9 nor2_2 + PLACED ( 37440 -14400 ) N ;
+- U10 nand2_2 + PLACED ( 37440 5760 ) FN ;
+- U11 inv1x_4 + PLACED ( 23040 5760 ) N ;
+- U12 inv1x_5 + PLACED ( -20160 -54720 ) N ;
+- U13 nand4_1 + PLACED ( 51840 -24480 ) N ;
+- U14 nand3_1 + PLACED ( 80640 -34560 ) N ;
+- U15 nand3_2 + PLACED ( 23040 15840 ) N ;
+- U16 inv1x_5 + PLACED ( 23040 25920 ) N ;
+- U17 inv1x_6 + PLACED ( 8640 25920 ) FN ;
+- U18 oai21_1 + PLACED ( 8640 46080 ) N ;
+- U19 inv1x_7 + PLACED ( 37440 25920 ) FN ;
+- U20 inv1x_8 + PLACED ( 66240 96480 ) FN ;
+- U21 nand2_2 + PLACED ( 8640 96480 ) N ;
+- U22 inv1x_9 + PLACED ( -20160 -4320 ) N ;
+- U23 inv1x_10 + PLACED ( 95040 5760 ) N ;
+- U24 aoi21_1 + PLACED ( -34560 -4320 ) N ;
+- U25 nand2_3 + PLACED ( 66240 56160 ) N ;
+- U26 nand3_3 + PLACED ( -20160 66240 ) N ;
+- U27 nor2_2 + PLACED ( 51840 -4320 ) N ;
+- U28 inv1x_4 + PLACED ( 66240 -34560 ) FN ;
+- U29 nand2_4 + PLACED ( 80640 15840 ) N ;
+- U30 aoi21_2 + PLACED ( 8640 -54720 ) N ;
+- U31 nand2_5 + PLACED ( 37440 -34560 ) N ;
+- U32 inv1x_2 + PLACED ( 51840 -74880 ) N ;
+- U33 inv1x_8 + PLACED ( 23040 -24480 ) FN ;
+- U34 nand2_6 + PLACED ( 37440 76320 ) FN ;
+- U35 aoi21_3 + PLACED ( 23040 36000 ) FN ;
+- U36 nand2_4 + PLACED ( 8640 36000 ) FN ;
+- U37 inv1x_9 + PLACED ( 51840 96480 ) N ;
+- U38 nand2_4 + PLACED ( 37440 66240 ) FN ;
+- U39 nand2_5 + PLACED ( 80640 96480 ) N ;
+- U40 inv1x_3 + PLACED ( 95040 96480 ) N ;
+- U41 inv1x_11 + PLACED ( 95040 76320 ) N ;
+- U42 nand2_7 + PLACED ( 80640 36000 ) FN ;
+- U43 nor2_2 + PLACED ( 80640 -44640 ) FN ;
+- U44 inv1x_12 + PLACED ( 95040 66240 ) N ;
+- U45 inv1x_12 + PLACED ( 66240 36000 ) N ;
+- U46 nand2_5 + PLACED ( 37440 56160 ) FN ;
+- U47 nand2_8 + PLACED ( 37440 -64800 ) N ;
+- U48 nand4_2 + PLACED ( -34560 25920 ) FN ;
+- U49 aoi21_3 + PLACED ( -20160 15840 ) N ;
+- U50 oai21_1 + PLACED ( -20160 56160 ) N ;
+- U51 inv1x_3 + PLACED ( 8640 -24480 ) N ;
+- U52 nand2_2 + PLACED ( 51840 76320 ) N ;
+- U53 oai21_2 + PLACED ( 37440 15840 ) N ;
+- U54 oai22_1 + PLACED ( -48960 56160 ) N ;
+- U55 nand3_4 + PLACED ( -92160 56160 ) N ;
+- U56 nand3_4 + PLACED ( -48960 76320 ) N ;
+- U57 inv1x_2 + PLACED ( -48960 96480 ) N ;
+- U58 nor2_1 + PLACED ( -48960 66240 ) FN ;
+- U59 inv1x_5 + PLACED ( -77760 86400 ) N ;
+- U60 inv1x_2 + PLACED ( -77760 76320 ) FN ;
+- U61 nand3_4 + PLACED ( -34560 86400 ) N ;
+- U62 inv1x_2 + PLACED ( -34560 -24480 ) N ;
+- U63 nor2_2 + PLACED ( 23040 -4320 ) N ;
+- U64 nor2_1 + PLACED ( -48960 -24480 ) FN ;
+- U65 inv1x_2 + PLACED ( 95040 25920 ) N ;
+- U66 inv1x_5 + PLACED ( 80640 -95040 ) N ;
+- U67 nand3_4 + PLACED ( 80640 25920 ) FN ;
+- U68 nand2_4 + PLACED ( 80640 -54720 ) FN ;
+- U69 nand2_1 + PLACED ( 80640 -84960 ) N ;
+- U70 inv1x_13 + PLACED ( 66240 25920 ) N ;
+- U71 nand4_3 + PLACED ( -77760 -54720 ) N ;
+- U72 oai21_3 + PLACED ( 37440 46080 ) N ;
+- U73 nand2_9 + PLACED ( -20160 46080 ) N ;
+- U74 nand2_2 + PLACED ( -34560 46080 ) N ;
+- U75 nand2_4 + PLACED ( 51840 56160 ) FN ;
+- U76 inv1x_5 + PLACED ( -20160 36000 ) N ;
+- U77 inv1x_2 + PLACED ( 37440 36000 ) FN ;
+- U78 inv1x_5 + PLACED ( -5760 36000 ) FN ;
+- U79 inv1x_4 + PLACED ( 8640 5760 ) N ;
+- U80 inv1x_8 + PLACED ( 8640 15840 ) FN ;
+- U81 aoi21_4 + PLACED ( 51840 36000 ) FN ;
+- U82 aoi21_5 + PLACED ( 8640 -105120 ) N ;
+- U83 oai22_2 + PLACED ( 66240 -105120 ) N ;
+- U84 inv1x_9 + PLACED ( 95040 -105120 ) N ;
+- U85 aoi21_6 + PLACED ( 95040 -54720 ) FN ;
+- U86 oai21_3 + PLACED ( 95040 -64800 ) N ;
+- U87 inv1x_13 + PLACED ( 95040 -74880 ) N ;
+- U88 nor2_3 + PLACED ( 80640 -74880 ) FN ;
+- U89 inv1x_2 + PLACED ( 95040 -44640 ) N ;
+- U90 nand2_5 + PLACED ( 66240 -84960 ) N ;
+- U91 aoi22_1 + PLACED ( 80640 -4320 ) FN ;
+- U92 inv1x_2 + PLACED ( 80640 46080 ) N ;
+- U93 nand2_10 + PLACED ( 80640 5760 ) FN ;
+- U94 nand3_5 + PLACED ( 51840 46080 ) N ;
+- U95 inv1x_2 + PLACED ( -20160 76320 ) N ;
+- U96 nand2_2 + PLACED ( -92160 76320 ) FN ;
+- U97 oai21_3 + PLACED ( 66240 46080 ) FN ;
+- U98 inv1x_3 + PLACED ( 66240 66240 ) N ;
+- U99 nor2_1 + PLACED ( 66240 86400 ) N ;
+- U100 inv1x_3 + PLACED ( 37440 -95040 ) N ;
+- U101 nor2_1 + PLACED ( 8640 -84960 ) N ;
+- U102 nor2_1 + PLACED ( -34560 5760 ) N ;
+- U103 inv1x_3 + PLACED ( -34560 15840 ) N ;
+- U104 nor3_1 + PLACED ( 8640 -34560 ) N ;
+- U105 nand3_4 + PLACED ( 8640 -4320 ) N ;
+- U106 nand3_6 + PLACED ( -5760 5760 ) N ;
+- U107 nand3_3 + PLACED ( -5760 25920 ) FN ;
+- U108 nand2_2 + PLACED ( -48960 5760 ) N ;
+- U109 nand2_2 + PLACED ( -63360 5760 ) N ;
+- U110 nor2_1 + PLACED ( 8640 86400 ) FN ;
+- U111 inv1x_9 + PLACED ( -92160 96480 ) FN ;
+- U112 nand3_7 + PLACED ( -34560 96480 ) N ;
+- U113 inv1x_5 + PLACED ( 23040 96480 ) N ;
+- U114 nand3_4 + PLACED ( 23040 66240 ) N ;
+- U115 nand2_2 + PLACED ( 8640 -14400 ) N ;
+- U116 inv1x_5 + PLACED ( 8640 -44640 ) N ;
+- U117 nand2_4 + PLACED ( 23040 -14400 ) N ;
+- U118 nor3_2 + PLACED ( -20160 -14400 ) N ;
+- U119 inv1x_2 + PLACED ( -77760 5760 ) N ;
+- U120 nand3_4 + PLACED ( -92160 36000 ) FN ;
+- U121 aoi21_7 + PLACED ( -5760 76320 ) N ;
+- U122 nand3_5 + PLACED ( -5760 86400 ) N ;
+- U123 nand2_2 + PLACED ( -92160 86400 ) FN ;
+- U124 nand2_1 + PLACED ( -106560 96480 ) N ;
+- U125 nand2_10 + PLACED ( -106560 46080 ) FN ;
+- U126 nand2_4 + PLACED ( -106560 86400 ) FN ;
+- U127 inv1x_3 + PLACED ( -63360 86400 ) FN ;
+- U128 inv1x_8 + PLACED ( -5760 -14400 ) FN ;
+- U129 inv1x_8 + PLACED ( -5760 -4320 ) N ;
+- U130 inv1x_2 + PLACED ( 80640 86400 ) N ;
+- U131 nand2_1 + PLACED ( -48960 -54720 ) FN ;
+- U132 nor2_1 + PLACED ( 23040 76320 ) N ;
+- U133 nand2_2 + PLACED ( 8640 56160 ) FN ;
+- U134 nand2_9 + PLACED ( 80640 66240 ) N ;
+- U135 nand3_7 + PLACED ( 80640 56160 ) N ;
+- U136 nand3_4 + PLACED ( 80640 76320 ) FN ;
+- U137 inv1x_3 + PLACED ( 23040 86400 ) N ;
+- U138 inv1x_9 + PLACED ( 37440 86400 ) N ;
+- U139 inv1x_5 + PLACED ( 37440 96480 ) FN ;
+- U140 nand3_5 + PLACED ( 51840 5760 ) FN ;
+- U141 nand3_3 + PLACED ( -34560 66240 ) N ;
+- U142 inv1x_8 + PLACED ( -77760 -4320 ) FN ;
+- U143 nand2_3 + PLACED ( -92160 -105120 ) N ;
+- U144 inv1x_2 + PLACED ( -77760 96480 ) N ;
+- U145 oai21_3 + PLACED ( 51840 -14400 ) N ;
+- U146 nand2_2 + PLACED ( -20160 -105120 ) N ;
+- U147 inv1x_3 + PLACED ( -34560 -84960 ) N ;
+- U148 inv1x_2 + PLACED ( -5760 -105120 ) N ;
+- U149 inv1x_8 + PLACED ( -92160 5760 ) N ;
+- U150 inv1x_8 + PLACED ( -20160 5760 ) FN ;
+- U151 inv1x_5 + PLACED ( -77760 66240 ) N ;
+- U152 aoi21_8 + PLACED ( 51840 -95040 ) N ;
+- U153 aoi21_4 + PLACED ( -77760 15840 ) N ;
+- U154 nor2_1 + PLACED ( -20160 -34560 ) N ;
+- U155 nor2_1 + PLACED ( -34560 -14400 ) N ;
+- U156 nor2_1 + PLACED ( -92160 -64800 ) N ;
+- U157 aoi21_7 + PLACED ( -5760 -54720 ) FN ;
+- U158 nor2_2 + PLACED ( -5760 -44640 ) N ;
+- U159 aoi21_4 + PLACED ( -5760 56160 ) FN ;
+- U160 inv1x_14 + PLACED ( 51840 -105120 ) N ;
+- U161 nand3_8 + PLACED ( 66240 -64800 ) FN ;
+- U162 nand3_2 + PLACED ( 66240 -44640 ) FN ;
+- U163 nand2_4 + PLACED ( 37440 -74880 ) FN ;
+- U164 inv1x_5 + PLACED ( 66240 76320 ) N ;
+- U165 inv1x_2 + PLACED ( -20160 86400 ) N ;
+- U166 nand2_10 + PLACED ( 51840 86400 ) N ;
+- U167 inv1x_3 + PLACED ( -92160 -95040 ) N ;
+- U168 inv1x_2 + PLACED ( -63360 -24480 ) N ;
+- U169 inv1x_5 + PLACED ( -20160 96480 ) FN ;
+- U170 inv1x_3 + PLACED ( -48960 -105120 ) FN ;
+- U171 nand2_11 + PLACED ( -106560 -54720 ) N ;
+- U172 nand2_1 + PLACED ( -34560 -54720 ) N ;
+- U173 inv1x_1 + PLACED ( 95040 46080 ) N ;
+- U174 nand2_9 + PLACED ( -5760 -74880 ) FN ;
+- U175 nand2_1 + PLACED ( 51840 66240 ) FN ;
+- U176 inv1x_3 + PLACED ( -106560 -84960 ) N ;
+- U177 nand2_12 + PLACED ( 37440 -105120 ) FN ;
+- U178 nand2_4 + PLACED ( -106560 15840 ) FN ;
+- U179 nand2_2 + PLACED ( -63360 -34560 ) N ;
+- U180 oai22_3 + PLACED ( -20160 -44640 ) N ;
+- U181 nor2_2 + PLACED ( 66240 5760 ) N ;
+- U182 nand2_2 + PLACED ( -77760 46080 ) N ;
+- U183 nor2_4 + PLACED ( -106560 -24480 ) FN ;
+- U184 nor2_5 + PLACED ( -92160 -54720 ) FN ;
+- U185 nor2_1 + PLACED ( -77760 -84960 ) N ;
+- U186 nor2_1 + PLACED ( -63360 25920 ) N ;
+- U187 oai21_3 + PLACED ( -63360 15840 ) N ;
+- U188 aoi21_7 + PLACED ( -63360 -95040 ) N ;
+- U189 aoi21_7 + PLACED ( -48960 -4320 ) N ;
+- U190 nand2_2 + PLACED ( -5760 -84960 ) FN ;
+- U191 aoi21_4 + PLACED ( -5760 46080 ) N ;
+- U192 nor2_2 + PLACED ( -20160 -24480 ) N ;
+- U193 nor2_2 + PLACED ( 51840 -84960 ) N ;
+- U194 aoi21_9 + PLACED ( -48960 -64800 ) N ;
+- U195 aoi21_1 + PLACED ( -5760 -24480 ) FN ;
+- U196 nand3_4 + PLACED ( -34560 -64800 ) FN ;
+- U197 nand3_3 + PLACED ( -63360 56160 ) FN ;
+- U198 nand2_2 + PLACED ( -77760 56160 ) N ;
+- U199 nor2_2 + PLACED ( -48960 46080 ) N ;
+- U200 nor2_1 + PLACED ( 37440 -54720 ) FN ;
+- U201 nor2_2 + PLACED ( -92160 -84960 ) N ;
+- U202 aoi21_4 + PLACED ( -48960 -74880 ) FN ;
+- U203 nor2_1 + PLACED ( -48960 -34560 ) FN ;
+- U204 nor2_1 + PLACED ( -106560 -44640 ) N ;
+- U205 nand2_2 + PLACED ( -48960 -44640 ) N ;
+- U206 nand2_2 + PLACED ( -34560 -105120 ) N ;
+- U207 nor2_2 + PLACED ( -34560 -95040 ) N ;
+- U208 nor2_1 + PLACED ( 8640 -64800 ) N ;
+- U209 nand2_2 + PLACED ( -63360 76320 ) N ;
+- U210 nor2_1 + PLACED ( -63360 66240 ) N ;
+- U211 nand2_2 + PLACED ( -92160 66240 ) N ;
+- U212 aoi21_10 + PLACED ( 23040 -44640 ) N ;
+- U213 nor2_2 + PLACED ( -106560 5760 ) N ;
+- U214 aoi21_4 + PLACED ( -5760 66240 ) FN ;
+- U215 nor2_2 + PLACED ( -92160 -44640 ) N ;
+- U216 nand2_2 + PLACED ( -106560 76320 ) FN ;
+- U217 nor2_1 + PLACED ( -106560 66240 ) N ;
+- U218 nor2_2 + PLACED ( -63360 36000 ) FN ;
+- U219 aoi21_7 + PLACED ( -63360 46080 ) FN ;
+- U220 inv1x_6 + PLACED ( -106560 -105120 ) FN ;
+- U221 inv1x_3 + PLACED ( 66240 -95040 ) FN ;
+- U222 inv1x_6 + PLACED ( 95040 -24480 ) FN ;
+- U223 inv1x_15 + PLACED ( 23040 -64800 ) N ;
+- U224 inv1x_15 + PLACED ( 95040 -95040 ) FN ;
+- U225 inv1x_3 + PLACED ( -63360 -105120 ) N ;
+- U226 nand2_2 + PLACED ( -48960 36000 ) N ;
+- U227 nand3_9 + PLACED ( 95040 36000 ) N ;
+- U228 inv1x_3 + PLACED ( -106560 36000 ) FN ;
+- U229 nand2_11 + PLACED ( -20160 -84960 ) N ;
+- U230 inv1x_2 + PLACED ( 51840 25920 ) N ;
+- U231 nand4_4 + PLACED ( 23040 -84960 ) FN ;
+- U232 nand2_2 + PLACED ( -77760 -105120 ) N ;
+- U233 nand3_4 + PLACED ( -77760 -24480 ) N ;
+- U234 inv1x_2 + PLACED ( -48960 86400 ) N ;
+- U235 inv1x_9 + PLACED ( 66240 -54720 ) N ;
+- U236 oai21_3 + PLACED ( -5760 -64800 ) N ;
+- U237 inv1x_6 + PLACED ( -106560 -64800 ) FN ;
+- U238 nand2_11 + PLACED ( -5760 96480 ) FN ;
+- U239 inv1x_3 + PLACED ( -63360 96480 ) N ;
+- U240 inv1x_3 + PLACED ( -48960 15840 ) FN ;
+- U241 nand3_4 + PLACED ( 51840 -44640 ) N ;
+- U242 nand2_10 + PLACED ( 66240 -14400 ) N ;
+- U243 nand2_6 + PLACED ( 66240 -4320 ) N ;
+- U244 nand2_2 + PLACED ( -106560 -14400 ) FN ;
+- U245 inv1x_3 + PLACED ( -106560 -4320 ) N ;
+- U246 nand4_5 + PLACED ( -77760 -44640 ) N ;
+- U247 nand2_2 + PLACED ( -77760 -64800 ) N ;
+- U248 nand2_2 + PLACED ( -63360 -64800 ) N ;
+- U249 nand2_9 + PLACED ( 8640 76320 ) FN ;
+- U250 nand2_2 + PLACED ( -63360 -14400 ) FN ;
+- U251 nand2_2 + PLACED ( -63360 -4320 ) N ;
+- U252 nand2_2 + PLACED ( -48960 -14400 ) FN ;
+- U253 inv1x_3 + PLACED ( -20160 -64800 ) FN ;
+- U254 oai21_2 + PLACED ( -34560 -44640 ) FN ;
+- U255 nand2_2 + PLACED ( 51840 15840 ) FN ;
+- U256 nand4_3 + PLACED ( -63360 -84960 ) N ;
+- U257 nand2_1 + PLACED ( -48960 -95040 ) N ;
+- U258 nand2_1 + PLACED ( -20160 -95040 ) N ;
+- U259 nand2_2 + PLACED ( 95040 86400 ) N ;
+- U260 nand3_6 + PLACED ( 95040 56160 ) FN ;
+- U261 nand2_9 + PLACED ( 23040 56160 ) N ;
+- U262 nand2_1 + PLACED ( 23040 46080 ) FN ;
+- U263 nand2_2 + PLACED ( -5760 -95040 ) N ;
+- U264 nand4_3 + PLACED ( 8640 -74880 ) N ;
+- U265 nand3_4 + PLACED ( 23040 -95040 ) N ;
+- U266 nand2_4 + PLACED ( -5760 15840 ) FN ;
+- U267 nand2_1 + PLACED ( -34560 36000 ) FN ;
+- U268 nand2_1 + PLACED ( -48960 25920 ) N ;
+- U269 nand3_2 + PLACED ( 80640 -14400 ) N ;
+- U270 nand2_1 + PLACED ( -92160 -24480 ) FN ;
+- U271 nand2_10 + PLACED ( -92160 15840 ) FN ;
+- U272 nand3_4 + PLACED ( -106560 25920 ) N ;
+- U273 nand3_5 + PLACED ( 8640 66240 ) FN ;
+- U274 inv1x_2 + PLACED ( -92160 46080 ) N ;
+- U275 nand2_2 + PLACED ( -34560 76320 ) FN ;
+- U276 nand2_9 + PLACED ( -77760 -14400 ) FN ;
+- U277 inv1x_3 + PLACED ( 37440 -44640 ) FN ;
+- U278 nand2_4 + PLACED ( -92160 -14400 ) N ;
+- U279 nand4_5 + PLACED ( -92160 -34560 ) FN ;
+- U280 nand3_4 + PLACED ( -77760 36000 ) N ;
+- U281 nand3_5 + PLACED ( -77760 25920 ) N ;
+END COMPONENTS
+
+PINS 43 ;
+- gnd! + NET gnd! + DIRECTION INPUT + USE GROUND ;
+- vdd! + NET vdd! + DIRECTION INPUT + USE POWER ;
+- p0 + NET p0 + DIRECTION OUTPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 95760 -118080 ) N ;
+- o0 + NET o0 + DIRECTION OUTPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 52560 -118080 ) N ;
+- n0 + NET n0 + DIRECTION OUTPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 31080 -118080 ) N ;
+- m0 + NET m0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -32400 -118080 ) N ;
+- l0 + NET l0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -54000 -118080 ) N ;
+- k0 + NET k0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 98640 119520 ) S ;
+- j0 + NET j0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 62640 119520 ) S ;
+- i0 + NET i0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 44280 119520 ) S ;
+- h0 + NET h0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( 9360 119520 ) S ;
+- g0 + NET g0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -27000 119520 ) S ;
+- f0 + NET f0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -64080 119520 ) S ;
+- e0 + NET e0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -118080 93600 ) E ;
+- d0 + NET d0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -118080 22320 ) E ;
+- c0 + NET c0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -118080 -23760 ) E ;
+- b0 + NET b0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -118080 -71280 ) E ;
+- a0 + NET a0 + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230
+  2870 ) + PLACED ( -118080 -94560 ) E ;
+- z + NET z + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 95760 ) W ;
+- y + NET y + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 74160 ) W ;
+- x + NET x + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 53280 ) W ;
+- w + NET w + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 32400 ) W ;
+- v + NET v + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 10720 ) W ;
+- u + NET u + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 -10800 ) W ;
+- t + NET t + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 -32400 ) W ;
+- s + NET s + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 -54240 ) W ;
+- r + NET r + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 -75600 ) W ;
+- q + NET q + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 119520 -96800 ) W ;
+- o + NET o + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 74160 -118080 ) N ;
+- n + NET n + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 9960 -118080 ) N ;
+- m + NET m + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -11160 -118080 ) N ;
+- l + NET l + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -75600 -118080 ) N ;
+- k + NET k + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -97200 -118080 ) N ;
+- j + NET j + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 81240 119520 ) S ;
+- i + NET i + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( 26640 119520 ) S ;
+- h + NET h + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -9360 119520 ) S ;
+- g + NET g + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -45480 119520 ) S ;
+- f + NET f + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -100080 119520 ) S ;
+- e + NET e + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -118080 69840 ) E ;
+- d + NET d + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -118080 46560 ) E ;
+- c + NET c + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -118080 -480 ) E ;
+- b + NET b + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -118080 -47520 ) E ;
+- a + NET a + DIRECTION INPUT + USE SIGNAL + LAYER METAL1 ( -230 0 ) ( 230 2870
+  ) + PLACED ( -82440 119520 ) S ;
+END PINS
+
+SPECIALNETS 2 ;
+- gnd! ( U281 gnd! ) ( U280 gnd! ) ( U279 gnd! ) ( U278 gnd! ) ( U277 gnd! )
+  ( U276 gnd! ) ( U275 gnd! ) ( U274 gnd! ) ( U273 gnd! ) ( U272 gnd! )
+  ( U271 gnd! ) ( U270 gnd! ) ( U269 gnd! ) ( U268 gnd! ) ( U267 gnd! )
+  ( U266 gnd! ) ( U265 gnd! ) ( U264 gnd! ) ( U263 gnd! ) ( U262 gnd! )
+  ( U261 gnd! ) ( U260 gnd! ) ( U259 gnd! ) ( U258 gnd! ) ( U257 gnd! )
+  ( U256 gnd! ) ( U255 gnd! ) ( U254 gnd! ) ( U253 gnd! ) ( U252 gnd! )
+  ( U251 gnd! ) ( U250 gnd! ) ( U249 gnd! ) ( U248 gnd! ) ( U247 gnd! )
+  ( U246 gnd! ) ( U245 gnd! ) ( U244 gnd! ) ( U243 gnd! ) ( U242 gnd! )
+  ( U241 gnd! ) ( U240 gnd! ) ( U239 gnd! ) ( U238 gnd! ) ( U237 gnd! )
+  ( U236 gnd! ) ( U235 gnd! ) ( U234 gnd! ) ( U233 gnd! ) ( U232 gnd! )
+  ( U231 gnd! ) ( U230 gnd! ) ( U229 gnd! ) ( U228 gnd! ) ( U227 gnd! )
+  ( U226 gnd! ) ( U225 gnd! ) ( U224 gnd! ) ( U223 gnd! ) ( U222 gnd! )
+  ( U221 gnd! ) ( U220 gnd! ) ( U219 gnd! ) ( U218 gnd! ) ( U217 gnd! )
+  ( U216 gnd! ) ( U215 gnd! ) ( U214 gnd! ) ( U213 gnd! ) ( U212 gnd! )
+  ( U211 gnd! ) ( U210 gnd! ) ( U209 gnd! ) ( U208 gnd! ) ( U207 gnd! )
+  ( U206 gnd! ) ( U205 gnd! ) ( U204 gnd! ) ( U203 gnd! ) ( U202 gnd! )
+  ( U201 gnd! ) ( U200 gnd! ) ( U199 gnd! ) ( U198 gnd! ) ( U197 gnd! )
+  ( U196 gnd! ) ( U195 gnd! ) ( U194 gnd! ) ( U193 gnd! ) ( U192 gnd! )
+  ( U191 gnd! ) ( U190 gnd! ) ( U189 gnd! ) ( U188 gnd! ) ( U187 gnd! )
+  ( U186 gnd! ) ( U185 gnd! ) ( U184 gnd! ) ( U183 gnd! ) ( U182 gnd! )
+  ( U181 gnd! ) ( U180 gnd! ) ( U179 gnd! ) ( U178 gnd! ) ( U177 gnd! )
+  ( U176 gnd! ) ( U175 gnd! ) ( U174 gnd! ) ( U173 gnd! ) ( U172 gnd! )
+  ( U171 gnd! ) ( U170 gnd! ) ( U169 gnd! ) ( U168 gnd! ) ( U167 gnd! )
+  ( U166 gnd! ) ( U165 gnd! ) ( U164 gnd! ) ( U163 gnd! ) ( U162 gnd! )
+  ( U161 gnd! ) ( U160 gnd! ) ( U159 gnd! ) ( U158 gnd! ) ( U157 gnd! )
+  ( U156 gnd! ) ( U155 gnd! ) ( U154 gnd! ) ( U153 gnd! ) ( U152 gnd! )
+  ( U151 gnd! ) ( U150 gnd! ) ( U149 gnd! ) ( U148 gnd! ) ( U147 gnd! )
+  ( U146 gnd! ) ( U145 gnd! ) ( U144 gnd! ) ( U143 gnd! ) ( U142 gnd! )
+  ( U141 gnd! ) ( U140 gnd! ) ( U139 gnd! ) ( U138 gnd! ) ( U137 gnd! )
+  ( U136 gnd! ) ( U135 gnd! ) ( U134 gnd! ) ( U133 gnd! ) ( U132 gnd! )
+  ( U131 gnd! ) ( U130 gnd! ) ( U129 gnd! ) ( U128 gnd! ) ( U127 gnd! )
+  ( U126 gnd! ) ( U125 gnd! ) ( U124 gnd! ) ( U123 gnd! ) ( U122 gnd! )
+  ( U121 gnd! ) ( U120 gnd! ) ( U119 gnd! ) ( U118 gnd! ) ( U117 gnd! )
+  ( U116 gnd! ) ( U115 gnd! ) ( U114 gnd! ) ( U113 gnd! ) ( U112 gnd! )
+  ( U111 gnd! ) ( U110 gnd! ) ( U109 gnd! ) ( U108 gnd! ) ( U107 gnd! )
+  ( U106 gnd! ) ( U105 gnd! ) ( U104 gnd! ) ( U103 gnd! ) ( U102 gnd! )
+  ( U101 gnd! ) ( U100 gnd! ) ( U99 gnd! ) ( U98 gnd! ) ( U97 gnd! )
+  ( U96 gnd! ) ( U95 gnd! ) ( U94 gnd! ) ( U93 gnd! ) ( U92 gnd! ) ( U91 gnd! )
+  ( U90 gnd! ) ( U89 gnd! ) ( U88 gnd! ) ( U87 gnd! ) ( U86 gnd! ) ( U85 gnd! )
+  ( U84 gnd! ) ( U83 gnd! ) ( U82 gnd! ) ( U81 gnd! ) ( U80 gnd! ) ( U79 gnd! )
+  ( U78 gnd! ) ( U77 gnd! ) ( U76 gnd! ) ( U75 gnd! ) ( U74 gnd! ) ( U73 gnd! )
+  ( U72 gnd! ) ( U71 gnd! ) ( U70 gnd! ) ( U69 gnd! ) ( U68 gnd! ) ( U67 gnd! )
+  ( U66 gnd! ) ( U65 gnd! ) ( U64 gnd! ) ( U63 gnd! ) ( U62 gnd! ) ( U61 gnd! )
+  ( U60 gnd! ) ( U59 gnd! ) ( U58 gnd! ) ( U57 gnd! ) ( U56 gnd! ) ( U55 gnd! )
+  ( U54 gnd! ) ( U53 gnd! ) ( U52 gnd! ) ( U51 gnd! ) ( U50 gnd! ) ( U49 gnd! )
+  ( U48 gnd! ) ( U47 gnd! ) ( U46 gnd! ) ( U45 gnd! ) ( U44 gnd! ) ( U43 gnd! )
+  ( U42 gnd! ) ( U41 gnd! ) ( U40 gnd! ) ( U39 gnd! ) ( U38 gnd! ) ( U37 gnd! )
+  ( U36 gnd! ) ( U35 gnd! ) ( U34 gnd! ) ( U33 gnd! ) ( U32 gnd! ) ( U31 gnd! )
+  ( U30 gnd! ) ( U29 gnd! ) ( U28 gnd! ) ( U27 gnd! ) ( U26 gnd! ) ( U25 gnd! )
+  ( U24 gnd! ) ( U23 gnd! ) ( U22 gnd! ) ( U21 gnd! ) ( U20 gnd! ) ( U19 gnd! )
+  ( U18 gnd! ) ( U17 gnd! ) ( U16 gnd! ) ( U15 gnd! ) ( U14 gnd! ) ( U13 gnd! )
+  ( U12 gnd! ) ( U11 gnd! ) ( U10 gnd! ) ( U9 gnd! ) ( U8 gnd! ) ( U7 gnd! )
+  ( U6 gnd! ) ( U5 gnd! ) ( U4 gnd! ) ( U3 gnd! ) ( U2 gnd! ) ( U1 gnd! )
+  + USE GROUND ;
+- vdd! ( U281 vdd! ) ( U280 vdd! ) ( U279 vdd! ) ( U278 vdd! ) ( U277 vdd! )
+  ( U276 vdd! ) ( U275 vdd! ) ( U274 vdd! ) ( U273 vdd! ) ( U272 vdd! )
+  ( U271 vdd! ) ( U270 vdd! ) ( U269 vdd! ) ( U268 vdd! ) ( U267 vdd! )
+  ( U266 vdd! ) ( U265 vdd! ) ( U264 vdd! ) ( U263 vdd! ) ( U262 vdd! )
+  ( U261 vdd! ) ( U260 vdd! ) ( U259 vdd! ) ( U258 vdd! ) ( U257 vdd! )
+  ( U256 vdd! ) ( U255 vdd! ) ( U254 vdd! ) ( U253 vdd! ) ( U252 vdd! )
+  ( U251 vdd! ) ( U250 vdd! ) ( U249 vdd! ) ( U248 vdd! ) ( U247 vdd! )
+  ( U246 vdd! ) ( U245 vdd! ) ( U244 vdd! ) ( U243 vdd! ) ( U242 vdd! )
+  ( U241 vdd! ) ( U240 vdd! ) ( U239 vdd! ) ( U238 vdd! ) ( U237 vdd! )
+  ( U236 vdd! ) ( U235 vdd! ) ( U234 vdd! ) ( U233 vdd! ) ( U232 vdd! )
+  ( U231 vdd! ) ( U230 vdd! ) ( U229 vdd! ) ( U228 vdd! ) ( U227 vdd! )
+  ( U226 vdd! ) ( U225 vdd! ) ( U224 vdd! ) ( U223 vdd! ) ( U222 vdd! )
+  ( U221 vdd! ) ( U220 vdd! ) ( U219 vdd! ) ( U218 vdd! ) ( U217 vdd! )
+  ( U216 vdd! ) ( U215 vdd! ) ( U214 vdd! ) ( U213 vdd! ) ( U212 vdd! )
+  ( U211 vdd! ) ( U210 vdd! ) ( U209 vdd! ) ( U208 vdd! ) ( U207 vdd! )
+  ( U206 vdd! ) ( U205 vdd! ) ( U204 vdd! ) ( U203 vdd! ) ( U202 vdd! )
+  ( U201 vdd! ) ( U200 vdd! ) ( U199 vdd! ) ( U198 vdd! ) ( U197 vdd! )
+  ( U196 vdd! ) ( U195 vdd! ) ( U194 vdd! ) ( U193 vdd! ) ( U192 vdd! )
+  ( U191 vdd! ) ( U190 vdd! ) ( U189 vdd! ) ( U188 vdd! ) ( U187 vdd! )
+  ( U186 vdd! ) ( U185 vdd! ) ( U184 vdd! ) ( U183 vdd! ) ( U182 vdd! )
+  ( U181 vdd! ) ( U180 vdd! ) ( U179 vdd! ) ( U178 vdd! ) ( U177 vdd! )
+  ( U176 vdd! ) ( U175 vdd! ) ( U174 vdd! ) ( U173 vdd! ) ( U172 vdd! )
+  ( U171 vdd! ) ( U170 vdd! ) ( U169 vdd! ) ( U168 vdd! ) ( U167 vdd! )
+  ( U166 vdd! ) ( U165 vdd! ) ( U164 vdd! ) ( U163 vdd! ) ( U162 vdd! )
+  ( U161 vdd! ) ( U160 vdd! ) ( U159 vdd! ) ( U158 vdd! ) ( U157 vdd! )
+  ( U156 vdd! ) ( U155 vdd! ) ( U154 vdd! ) ( U153 vdd! ) ( U152 vdd! )
+  ( U151 vdd! ) ( U150 vdd! ) ( U149 vdd! ) ( U148 vdd! ) ( U147 vdd! )
+  ( U146 vdd! ) ( U145 vdd! ) ( U144 vdd! ) ( U143 vdd! ) ( U142 vdd! )
+  ( U141 vdd! ) ( U140 vdd! ) ( U139 vdd! ) ( U138 vdd! ) ( U137 vdd! )
+  ( U136 vdd! ) ( U135 vdd! ) ( U134 vdd! ) ( U133 vdd! ) ( U132 vdd! )
+  ( U131 vdd! ) ( U130 vdd! ) ( U129 vdd! ) ( U128 vdd! ) ( U127 vdd! )
+  ( U126 vdd! ) ( U125 vdd! ) ( U124 vdd! ) ( U123 vdd! ) ( U122 vdd! )
+  ( U121 vdd! ) ( U120 vdd! ) ( U119 vdd! ) ( U118 vdd! ) ( U117 vdd! )
+  ( U116 vdd! ) ( U115 vdd! ) ( U114 vdd! ) ( U113 vdd! ) ( U112 vdd! )
+  ( U111 vdd! ) ( U110 vdd! ) ( U109 vdd! ) ( U108 vdd! ) ( U107 vdd! )
+  ( U106 vdd! ) ( U105 vdd! ) ( U104 vdd! ) ( U103 vdd! ) ( U102 vdd! )
+  ( U101 vdd! ) ( U100 vdd! ) ( U99 vdd! ) ( U98 vdd! ) ( U97 vdd! )
+  ( U96 vdd! ) ( U95 vdd! ) ( U94 vdd! ) ( U93 vdd! ) ( U92 vdd! ) ( U91 vdd! )
+  ( U90 vdd! ) ( U89 vdd! ) ( U88 vdd! ) ( U87 vdd! ) ( U86 vdd! ) ( U85 vdd! )
+  ( U84 vdd! ) ( U83 vdd! ) ( U82 vdd! ) ( U81 vdd! ) ( U80 vdd! ) ( U79 vdd! )
+  ( U78 vdd! ) ( U77 vdd! ) ( U76 vdd! ) ( U75 vdd! ) ( U74 vdd! ) ( U73 vdd! )
+  ( U72 vdd! ) ( U71 vdd! ) ( U70 vdd! ) ( U69 vdd! ) ( U68 vdd! ) ( U67 vdd! )
+  ( U66 vdd! ) ( U65 vdd! ) ( U64 vdd! ) ( U63 vdd! ) ( U62 vdd! ) ( U61 vdd! )
+  ( U60 vdd! ) ( U59 vdd! ) ( U58 vdd! ) ( U57 vdd! ) ( U56 vdd! ) ( U55 vdd! )
+  ( U54 vdd! ) ( U53 vdd! ) ( U52 vdd! ) ( U51 vdd! ) ( U50 vdd! ) ( U49 vdd! )
+  ( U48 vdd! ) ( U47 vdd! ) ( U46 vdd! ) ( U45 vdd! ) ( U44 vdd! ) ( U43 vdd! )
+  ( U42 vdd! ) ( U41 vdd! ) ( U40 vdd! ) ( U39 vdd! ) ( U38 vdd! ) ( U37 vdd! )
+  ( U36 vdd! ) ( U35 vdd! ) ( U34 vdd! ) ( U33 vdd! ) ( U32 vdd! ) ( U31 vdd! )
+  ( U30 vdd! ) ( U29 vdd! ) ( U28 vdd! ) ( U27 vdd! ) ( U26 vdd! ) ( U25 vdd! )
+  ( U24 vdd! ) ( U23 vdd! ) ( U22 vdd! ) ( U21 vdd! ) ( U20 vdd! ) ( U19 vdd! )
+  ( U18 vdd! ) ( U17 vdd! ) ( U16 vdd! ) ( U15 vdd! ) ( U14 vdd! ) ( U13 vdd! )
+  ( U12 vdd! ) ( U11 vdd! ) ( U10 vdd! ) ( U9 vdd! ) ( U8 vdd! ) ( U7 vdd! )
+  ( U6 vdd! ) ( U5 vdd! ) ( U4 vdd! ) ( U3 vdd! ) ( U2 vdd! ) ( U1 vdd! )
+  + USE POWER ;
+END SPECIALNETS
+
+NETS 319 ;
+- n528 ( U281 out ) ( U280 in0 ) ;
+- d ( PIN d ) ( U278 in0 ) ( U276 in0 ) ;
+- n525 ( U272 in2 ) ( U270 out ) ;
+- n526 ( U279 out ) ( U270 in1 ) ;
+- n524 ( U265 in2 ) ( U264 out ) ;
+- n523 ( U265 in0 ) ( U263 out ) ;
+- n522 ( U267 in1 ) ( U264 in1 ) ( U262 out ) ;
+- n521 ( U273 in0 ) ( U262 in1 ) ( U261 out ) ;
+- n520 ( U260 in2 ) ( U259 out ) ;
+- n519 ( U264 in3 ) ( U263 in1 ) ( U258 out ) ;
+- n518 ( U258 in1 ) ( U257 out ) ;
+- n516 ( U257 in1 ) ( U256 out ) ;
+- n515 ( U252 in1 ) ( U251 out ) ;
+- n514 ( U251 in1 ) ( U250 out ) ;
+- n513 ( U248 in1 ) ( U247 out ) ;
+- n511 ( U245 in0 ) ( U244 out ) ;
+- n510 ( U243 in1 ) ( U242 out ) ;
+- n509 ( U242 in1 ) ( U241 out ) ;
+- i ( PIN i ) ( U238 in0 ) ;
+- n517 ( U276 out ) ( U256 in3 ) ( U233 in2 ) ;
+- n507 ( U260 out ) ( U227 in2 ) ;
+- q ( PIN q ) ( U224 in0 ) ;
+- b0 ( PIN b0 ) ( U223 in0 ) ;
+- n506 ( U278 in1 ) ( U276 in1 ) ( U222 out ) ;
+- s ( PIN s ) ( U222 in0 ) ;
+- t ( PIN t ) ( U221 in0 ) ;
+- l ( PIN l ) ( U220 in0 ) ;
+- n503 ( U280 in2 ) ( U219 out ) ;
+- n502 ( U281 in0 ) ( U218 out ) ;
+- n501 ( U217 in0 ) ( U216 out ) ;
+- n500 ( U270 in0 ) ( U215 out ) ;
+- n499 ( U275 in0 ) ( U249 out ) ( U214 in1 ) ;
+- n498 ( U228 out ) ( U214 in0 ) ;
+- n497 ( U245 out ) ( U213 in1 ) ;
+- net824 ( U277 out ) ( U212 in2 ) ;
+- n496 ( U265 out ) ( U212 in0 ) ;
+- n494 ( U212 in1 ) ( U210 out ) ;
+- n495 ( U211 out ) ( U210 in0 ) ;
+- n493 ( U210 in1 ) ( U209 out ) ;
+- n492 ( U264 in0 ) ( U208 out ) ;
+- n489 ( U207 in0 ) ( U206 out ) ;
+- n490 ( U225 out ) ( U206 in1 ) ;
+- n487 ( U205 in0 ) ( U204 out ) ;
+- n486 ( U205 in1 ) ( U203 out ) ;
+- n485 ( U257 in0 ) ( U202 out ) ;
+- r ( PIN r ) ( U229 in1 ) ( U202 in2 ) ;
+- n484 ( U256 in2 ) ( U201 out ) ;
+- n483 ( U267 in0 ) ( U199 out ) ;
+- n482 ( U199 in1 ) ( U198 out ) ;
+- n481 ( U199 in0 ) ( U197 out ) ;
+- n480 ( U253 out ) ( U196 in1 ) ;
+- n479 ( U254 out ) ( U196 in0 ) ;
+- n478 ( U196 in2 ) ( U195 out ) ;
+- n477 ( U196 out ) ( U194 in2 ) ;
+- n476 ( U195 in1 ) ( U192 out ) ;
+- n475 ( U236 in1 ) ( U190 out ) ;
+- n472 ( U194 in0 ) ( U189 out ) ;
+- n474 ( U252 out ) ( U189 in1 ) ;
+- n473 ( U275 out ) ( U189 in0 ) ;
+- n470 ( U194 in1 ) ( U188 out ) ;
+- n471 ( U248 out ) ( U188 in1 ) ;
+- n469 ( U189 in2 ) ( U187 out ) ;
+- n468 ( U187 in2 ) ( U186 out ) ;
+- net766 ( U239 out ) ( U186 in1 ) ;
+- net765 ( U268 in0 ) ( U240 out ) ( U186 in0 ) ;
+- n467 ( U188 in0 ) ( U185 out ) ;
+- g ( PIN g ) ( U225 in0 ) ( U184 in1 ) ;
+- e ( PIN e ) ( U204 in1 ) ( U184 in0 ) ;
+- f ( PIN f ) ( U204 in0 ) ( U183 in1 ) ;
+- n466 ( U243 in0 ) ( U181 out ) ;
+- n465 ( U254 in1 ) ( U180 out ) ;
+- net749 ( U250 in1 ) ( U179 out ) ;
+- n464 ( U246 out ) ( U179 in0 ) ;
+- n462 ( U272 in1 ) ( U228 in0 ) ( U178 out ) ;
+- n463 ( U213 out ) ( U178 in0 ) ;
+- n461 ( U201 in1 ) ( U176 out ) ;
+- n460 ( U231 out ) ( U174 in1 ) ;
+- n459 ( U183 out ) ( U171 in1 ) ;
+- n458 ( U184 out ) ( U171 in0 ) ;
+- n457 ( U188 in2 ) ( U170 out ) ;
+- m0 ( PIN m0 ) ( U170 in0 ) ;
+- g0 ( PIN g0 ) ( U238 in1 ) ( U169 in0 ) ;
+- net707 ( U201 in0 ) ( U167 out ) ;
+- net676 ( U236 in0 ) ( U235 in0 ) ( U161 out ) ;
+- n456 ( U231 in0 ) ( U224 out ) ( U161 in1 ) ;
+- n455 ( U231 in1 ) ( U223 out ) ( U161 in0 ) ;
+- n ( PIN n ) ( U177 in0 ) ( U160 in0 ) ;
+- n454 ( U214 in2 ) ( U159 out ) ;
+- n527 ( U272 in0 ) ( U271 out ) ( U159 in2 ) ;
+- n452 ( U195 in2 ) ( U158 out ) ;
+- n453 ( U180 in3 ) ( U174 out ) ( U158 in1 ) ;
+- n449 ( U253 in0 ) ( U157 out ) ;
+- n451 ( U236 out ) ( U157 in1 ) ;
+- n450 ( U191 out ) ( U157 in0 ) ;
+- n448 ( U185 in0 ) ( U156 out ) ;
+- net655 ( U237 in0 ) ( U215 in1 ) ( U208 in1 ) ( U171 out ) ( U156 in1 ) ;
+- b ( PIN b ) ( U244 in0 ) ( U202 in0 ) ( U176 in0 ) ( U156 in0 ) ;
+- n447 ( U254 in0 ) ( U155 out ) ;
+- n446 ( U180 in0 ) ( U154 out ) ;
+- n444 ( U187 in0 ) ( U153 out ) ;
+- n445 ( U182 out ) ( U153 in2 ) ;
+- p0 ( PIN p0 ) ( U152 out ) ;
+- n443 ( U194 out ) ( U152 in1 ) ;
+- n442 ( U193 out ) ( U152 in0 ) ;
+- net961 ( U271 in1 ) ( U197 in0 ) ( U185 in1 ) ( U151 out ) ;
+- net968 ( U271 in0 ) ( U187 in1 ) ( U149 out ) ;
+- n441 ( U263 in0 ) ( U148 out ) ;
+- n488 ( U205 out ) ( U147 in0 ) ;
+- n440 ( U148 in0 ) ( U146 out ) ;
+- n439 ( U147 out ) ( U146 in1 ) ;
+- n491 ( U207 out ) ( U146 in0 ) ;
+- n438 ( U193 in1 ) ( U145 out ) ;
+- n437 ( U279 in2 ) ( U256 in0 ) ( U233 in0 ) ( U143 out ) ;
+- n504 ( U232 in1 ) ( U220 out ) ( U143 in1 ) ;
+- n505 ( U232 in0 ) ( U221 out ) ( U143 in0 ) ;
+- net904 ( U281 in1 ) ( U142 out ) ( U141 in2 ) ;
+- net946 ( U273 out ) ( U141 in1 ) ;
+- net748 ( U248 in0 ) ( U237 out ) ( U178 in1 ) ( U141 in0 ) ;
+- net949 ( U277 in0 ) ( U140 out ) ;
+- net1671 ( U139 out ) ( U138 in0 ) ;
+- net679 ( U173 out ) ( U161 in2 ) ( U136 in2 ) ;
+- n436 ( U136 out ) ( U135 in2 ) ( U134 in1 ) ;
+- net664 ( U249 in0 ) ( U159 in0 ) ( U133 out ) ;
+- net788 ( U261 in0 ) ( U132 out ) ;
+- net1668 ( U137 out ) ( U132 in1 ) ;
+- n435 ( U247 in1 ) ( U142 in0 ) ( U131 out ) ;
+- net709 ( U179 in1 ) ( U168 out ) ( U131 in1 ) ;
+- x ( PIN x ) ( U191 in0 ) ( U173 in0 ) ( U130 in0 ) ;
+- net1682 ( U266 in0 ) ( U157 in2 ) ( U129 out ) ;
+- net1681 ( U129 in0 ) ( U128 out ) ;
+- net1685 ( U209 in1 ) ( U127 out ) ;
+- net774 ( U234 out ) ( U219 in2 ) ( U191 in2 ) ( U127 in0 ) ;
+- net836 ( U213 in0 ) ( U149 in0 ) ( U125 out ) ;
+- n434 ( U216 in1 ) ( U211 in1 ) ( U126 out ) ( U125 in0 ) ;
+- net728 ( U274 in0 ) ( U125 in1 ) ( U124 out ) ;
+- k0 ( PIN k0 ) ( U216 in0 ) ( U122 in0 ) ;
+- n424 ( U122 out ) ( U121 in2 ) ;
+- net669 ( U141 out ) ( U121 in1 ) ;
+- net668 ( U214 out ) ( U121 in0 ) ;
+- net952 ( U280 in1 ) ( U120 out ) ;
+- net944 ( U272 out ) ( U120 in1 ) ;
+- net845 ( U217 out ) ( U120 in0 ) ;
+- c ( PIN c ) ( U281 in2 ) ( U251 in0 ) ( U183 in0 ) ( U119 in0 ) ;
+- m ( PIN m ) ( U258 in0 ) ( U250 in0 ) ( U247 in0 ) ( U244 in1 ) ( U229 in0 )
+  ( U118 in2 ) ;
+- net682 ( U207 in1 ) ( U162 out ) ( U116 in0 ) ;
+- n425 ( U117 in1 ) ( U116 out ) ( U115 in1 ) ;
+- n427 ( U118 out ) ( U115 in0 ) ;
+- net865 ( U273 in1 ) ( U260 in1 ) ( U249 in1 ) ( U114 out ) ;
+- h ( PIN h ) ( U126 in0 ) ( U124 in0 ) ( U123 in0 ) ( U113 in0 ) ;
+- net979 ( U144 out ) ( U112 in2 ) ;
+- f0 ( PIN f0 ) ( U124 in1 ) ( U111 in0 ) ;
+- net648 ( U233 out ) ( U153 in1 ) ( U109 in1 ) ;
+- n431 ( U109 out ) ( U108 in1 ) ;
+- j ( PIN j ) ( U215 in0 ) ( U202 in1 ) ( U182 in0 ) ( U168 in0 ) ( U108 in0 ) ;
+- n433 ( U107 out ) ( U106 in2 ) ;
+- n432 ( U108 out ) ( U106 in1 ) ;
+- n426 ( U110 out ) ( U106 in0 ) ;
+- n430 ( U106 out ) ( U105 in2 ) ;
+- n429 ( U115 out ) ( U105 in0 ) ;
+- n428 ( U105 out ) ( U104 in2 ) ;
+- n423 ( U121 out ) ( U104 in1 ) ;
+- net867 ( U268 in1 ) ( U266 out ) ( U226 in1 ) ( U103 in0 ) ;
+- net672 ( U103 out ) ( U102 in0 ) ;
+- net813 ( U264 in2 ) ( U101 out ) ;
+- net686 ( U231 in3 ) ( U206 in0 ) ( U190 in0 ) ( U177 out ) ( U163 in0 )
+  ( U100 in0 ) ;
+- z ( PIN z ) ( U175 in0 ) ( U99 in1 ) ;
+- o ( PIN o ) ( U177 in1 ) ( U166 in1 ) ( U99 in0 ) ;
+- h0 ( PIN h0 ) ( U175 in1 ) ( U166 in0 ) ( U98 in0 ) ;
+- n412 ( U98 out ) ( U97 in1 ) ;
+- n411 ( U99 out ) ( U97 in0 ) ;
+- net843 ( U217 in1 ) ( U96 out ) ;
+- n414 ( U97 out ) ( U94 in0 ) ;
+- n413 ( U94 out ) ( U92 in0 ) ;
+- n415 ( U93 in0 ) ( U92 out ) ( U91 in2 ) ;
+- n421 ( U91 out ) ( U90 in1 ) ;
+- n417 ( U101 in1 ) ( U100 out ) ( U90 in0 ) ;
+- net739 ( U105 in1 ) ( U93 out ) ( U89 in0 ) ;
+- net759 ( U241 in2 ) ( U88 out ) ;
+- net687 ( U231 in2 ) ( U229 out ) ( U190 in1 ) ( U163 in1 ) ( U87 in0 ) ;
+- net827 ( U265 in1 ) ( U227 out ) ( U86 in2 ) ;
+- n416 ( U88 in0 ) ( U87 out ) ( U86 in0 ) ;
+- n418 ( U86 out ) ( U85 in2 ) ;
+- net829 ( U89 out ) ( U85 in0 ) ;
+- n419 ( U85 out ) ( U84 in0 ) ;
+- n420 ( U84 out ) ( U83 in3 ) ;
+- n422 ( U90 out ) ( U83 in1 ) ;
+- n0 ( PIN n0 ) ( U82 out ) ;
+- net643 ( U83 out ) ( U82 in2 ) ;
+- net641 ( U104 out ) ( U82 in0 ) ;
+- net777 ( U195 in0 ) ( U81 out ) ;
+- net1678 ( U259 in1 ) ( U130 out ) ( U81 in2 ) ;
+- net2857 ( U275 in1 ) ( U227 in1 ) ( U218 in1 ) ( U197 in1 ) ( U122 in1 )
+  ( U91 in1 ) ( U79 out ) ;
+- net2998 ( U80 out ) ( U79 in0 ) ;
+- net924 ( U266 in1 ) ( U107 in2 ) ( U78 out ) ;
+- net776 ( U192 in1 ) ( U150 in0 ) ( U76 out ) ;
+- net853 ( U274 out ) ( U226 in0 ) ( U74 in1 ) ;
+- net936 ( U107 in0 ) ( U73 out ) ;
+- net896 ( U241 in1 ) ( U72 out ) ;
+- net699 ( U182 in1 ) ( U165 out ) ( U72 in1 ) ;
+- n410 ( U131 in0 ) ( U71 out ) ;
+- n508 ( U246 in2 ) ( U232 out ) ( U71 in2 ) ;
+- n512 ( U279 in1 ) ( U278 out ) ( U246 in1 ) ( U71 in1 ) ;
+- k ( PIN k ) ( U279 in0 ) ( U246 in0 ) ( U167 in0 ) ( U153 in0 ) ( U109 in0 )
+  ( U71 in0 ) ;
+- net701 ( U230 in0 ) ( U112 out ) ( U70 in0 ) ;
+- net758 ( U88 in1 ) ( U69 out ) ;
+- net674 ( U279 in3 ) ( U256 in1 ) ( U246 in3 ) ( U233 in1 ) ( U160 out )
+  ( U71 in3 ) ( U69 in1 ) ;
+- net683 ( U241 in0 ) ( U235 out ) ( U162 in1 ) ( U68 in0 ) ;
+- net897 ( U242 in0 ) ( U67 out ) ;
+- net894 ( U134 out ) ( U67 in2 ) ;
+- net732 ( U230 out ) ( U81 in1 ) ( U67 in0 ) ;
+- net956 ( U227 in0 ) ( U65 out ) ;
+- net763 ( U252 in0 ) ( U64 out ) ;
+- net689 ( U117 in0 ) ( U63 out ) ;
+- net653 ( U172 in1 ) ( U155 in1 ) ( U62 out ) ;
+- net970 ( U191 in1 ) ( U174 in0 ) ( U61 out ) ;
+- net703 ( U112 in1 ) ( U111 out ) ( U110 in1 ) ( U61 in1 ) ;
+- net702 ( U169 out ) ( U112 in0 ) ( U61 in0 ) ;
+- net960 ( U151 in0 ) ( U60 out ) ;
+- e0 ( PIN e0 ) ( U144 in0 ) ( U59 in0 ) ;
+- net841 ( U219 in0 ) ( U58 out ) ;
+- a ( PIN a ) ( U203 in0 ) ( U57 in0 ) ;
+- net652 ( U234 in0 ) ( U197 in2 ) ( U181 in1 ) ( U166 out ) ( U155 in0 )
+  ( U56 in2 ) ;
+- n408 ( U58 in1 ) ( U57 out ) ( U56 in1 ) ;
+- net704 ( U61 in2 ) ( U60 in0 ) ( U59 out ) ( U56 in0 ) ;
+- net795 ( U123 out ) ( U55 in2 ) ;
+- net791 ( U239 in0 ) ( U238 out ) ( U209 in0 ) ( U198 in1 ) ( U122 in2 )
+  ( U96 in0 ) ( U55 in1 ) ;
+- l0 ( PIN l0 ) ( U211 in0 ) ( U198 in0 ) ( U55 in0 ) ;
+- net794 ( U55 out ) ( U54 in3 ) ;
+- net793 ( U56 out ) ( U54 in2 ) ;
+- net718 ( U120 in2 ) ( U119 out ) ( U118 in0 ) ( U54 in1 ) ;
+- net911 ( U255 out ) ( U53 in2 ) ;
+- net738 ( U94 in1 ) ( U52 out ) ;
+- net691 ( U96 in1 ) ( U95 out ) ( U52 in0 ) ;
+- u ( PIN u ) ( U203 in1 ) ( U154 in1 ) ( U51 in0 ) ;
+- net756 ( U74 out ) ( U50 in1 ) ;
+- net755 ( U50 out ) ( U49 in2 ) ;
+- net964 ( U254 in2 ) ( U150 out ) ( U49 in1 ) ;
+- net797 ( U140 in1 ) ( U53 out ) ( U49 in0 ) ;
+- n409 ( U49 out ) ( U48 in3 ) ;
+- net928 ( U268 out ) ( U48 in2 ) ;
+- net866 ( U226 out ) ( U48 in1 ) ;
+- net927 ( U267 out ) ( U48 in0 ) ;
+- o0 ( PIN o0 ) ( U47 out ) ;
+- net645 ( U212 out ) ( U47 in0 ) ;
+- net907 ( U261 in1 ) ( U133 in1 ) ( U46 out ) ;
+- a0 ( PIN a0 ) ( U46 in0 ) ( U45 in0 ) ;
+- net684 ( U162 in2 ) ( U43 out ) ;
+- c0 ( PIN c0 ) ( U152 in2 ) ( U66 in0 ) ( U43 in1 ) ;
+- net1666 ( U44 out ) ( U42 in1 ) ;
+- net1655 ( U45 out ) ( U42 in0 ) ;
+- y ( PIN y ) ( U44 in0 ) ( U41 in0 ) ;
+- net986 ( U259 in0 ) ( U40 out ) ;
+- net1620 ( U137 in0 ) ( U136 in1 ) ( U133 in0 ) ( U75 in1 ) ( U41 out )
+  ( U39 in0 ) ;
+- net1636 ( U159 in1 ) ( U135 in1 ) ( U134 in0 ) ( U38 out ) ;
+- net1592 ( U138 out ) ( U132 in0 ) ( U114 in2 ) ( U38 in0 ) ;
+- i0 ( PIN i0 ) ( U164 in0 ) ( U136 in0 ) ( U75 in0 ) ( U72 in0 ) ( U39 in1 )
+  ( U37 in0 ) ;
+- net2959 ( U76 in0 ) ( U74 in0 ) ( U73 in1 ) ( U36 out ) ;
+- net2994 ( U78 in0 ) ( U35 out ) ;
+- net2995 ( U77 out ) ( U35 in2 ) ;
+- net2956 ( U81 in0 ) ( U75 out ) ( U72 in2 ) ( U36 in1 ) ( U35 in0 ) ;
+- net2949 ( U38 in1 ) ( U37 out ) ( U34 in1 ) ;
+- j0 ( PIN j0 ) ( U165 in0 ) ( U139 in0 ) ( U126 in1 ) ( U123 in1 ) ( U34 in0 )
+  ;
+- net688 ( U145 in1 ) ( U117 out ) ( U33 in0 ) ;
+- net783 ( U193 in0 ) ( U32 out ) ;
+- net779 ( U33 out ) ( U31 in1 ) ;
+- v ( PIN v ) ( U255 in0 ) ( U218 in0 ) ( U154 in0 ) ( U118 in1 ) ( U97 in2 )
+  ( U95 in0 ) ( U73 in0 ) ( U58 in0 ) ( U31 in0 ) ;
+- net646 ( U47 in1 ) ( U30 out ) ;
+- net822 ( U48 out ) ( U30 in1 ) ;
+- net799 ( U200 out ) ( U30 in0 ) ;
+- net730 ( U69 in0 ) ( U68 in1 ) ( U67 in1 ) ( U66 out ) ( U29 in1 ) ;
+- net1687 ( U70 out ) ( U29 in0 ) ;
+- net729 ( U208 in0 ) ( U200 in0 ) ( U86 in1 ) ( U68 out ) ( U28 in0 ) ;
+- net685 ( U200 in1 ) ( U163 out ) ( U63 in1 ) ( U27 in0 ) ;
+- net757 ( U50 in2 ) ( U26 out ) ;
+- net693 ( U145 in0 ) ( U53 in0 ) ( U52 in1 ) ( U51 out ) ( U50 in0 )
+  ( U26 in2 ) ;
+- net926 ( U54 out ) ( U26 in1 ) ;
+- net917 ( U260 in0 ) ( U135 in0 ) ( U25 out ) ;
+- net697 ( U164 out ) ( U114 in0 ) ( U46 in1 ) ( U25 in1 ) ;
+- net642 ( U82 in1 ) ( U24 out ) ;
+- net671 ( U102 out ) ( U24 in2 ) ;
+- net852 ( U280 out ) ( U24 in1 ) ;
+- net1654 ( U43 in0 ) ( U42 out ) ( U23 in0 ) ;
+- net958 ( U26 in0 ) ( U25 in0 ) ( U24 in0 ) ( U23 out ) ( U22 in0 ) ;
+- net945 ( U273 in2 ) ( U21 out ) ;
+- net733 ( U40 in0 ) ( U39 out ) ( U20 in0 ) ;
+- net920 ( U262 in0 ) ( U18 out ) ;
+- net705 ( U114 in1 ) ( U113 out ) ( U110 in0 ) ( U21 in1 ) ( U18 in2 ) ;
+- net873 ( U21 in0 ) ( U20 out ) ( U19 in0 ) ( U18 in0 ) ;
+- net2984 ( U36 in0 ) ( U35 in1 ) ( U34 out ) ( U17 in0 ) ;
+- net875 ( U18 in1 ) ( U17 out ) ( U16 in0 ) ;
+- net981 ( U16 out ) ( U15 in2 ) ;
+- net966 ( U19 out ) ( U15 in1 ) ;
+- net659 ( U158 in0 ) ( U128 in0 ) ( U107 in1 ) ( U64 in1 ) ( U22 out )
+  ( U15 in0 ) ;
+- net742 ( U104 in0 ) ( U83 in2 ) ( U83 in0 ) ( U14 out ) ;
+- net744 ( U243 out ) ( U145 in2 ) ( U14 in1 ) ;
+- net743 ( U269 out ) ( U14 in0 ) ;
+- n407 ( U15 out ) ( U13 in3 ) ;
+- net800 ( U27 out ) ( U13 in2 ) ;
+- w ( PIN w ) ( U64 in0 ) ( U63 in0 ) ( U62 in0 ) ( U13 in1 ) ;
+- net891 ( U28 out ) ( U13 in0 ) ;
+- net723 ( U180 in1 ) ( U172 out ) ( U12 in0 ) ;
+- d0 ( PIN d0 ) ( U255 in1 ) ( U219 in1 ) ( U181 in0 ) ( U172 in0 ) ( U162 in0 )
+  ( U101 in0 ) ( U94 in2 ) ( U11 in0 ) ;
+- net680 ( U80 in0 ) ( U77 in0 ) ( U54 in0 ) ( U27 in1 ) ( U11 out ) ( U10 in1 )
+  ;
+- net673 ( U240 in0 ) ( U175 out ) ( U102 in1 ) ( U53 in1 ) ( U10 in0 ) ;
+- net825 ( U269 in1 ) ( U9 out ) ;
+- n406 ( U10 out ) ( U8 in0 ) ;
+- n405 ( U9 in1 ) ( U8 out ) ( U7 in1 ) ;
+- net754 ( U236 in2 ) ( U192 in0 ) ( U180 in2 ) ( U12 out ) ( U9 in0 )
+  ( U7 in0 ) ;
+- net3006 ( U140 in2 ) ( U6 out ) ;
+- net741 ( U269 in2 ) ( U135 out ) ( U93 in1 ) ( U5 in0 ) ;
+- net830 ( U269 in0 ) ( U140 in0 ) ( U91 in3 ) ( U91 in0 ) ( U85 in1 )
+  ( U4 out ) ;
+- net745 ( U14 in2 ) ( U13 out ) ( U3 in2 ) ;
+- net731 ( U65 in0 ) ( U29 out ) ( U4 in0 ) ( U3 in1 ) ;
+- net931 ( U6 in0 ) ( U5 out ) ( U3 in0 ) ;
+- net819 ( U30 in2 ) ( U2 out ) ;
+- net821 ( U32 in0 ) ( U31 out ) ( U2 in1 ) ;
+- net820 ( U2 in0 ) ( U1 out ) ;
+- net934 ( U3 out ) ( U1 in1 ) ;
+- net801 ( U7 out ) ( U1 in0 ) ;
+END NETS
+
+END DESIGN

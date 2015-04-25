@@ -1,0 +1,3 @@
+perl main.pl test.sp test.lef header.lef
+perl lef2cifp.pl test.lef test.cif test.v
+cp test.cif ../../cadence_pdk
